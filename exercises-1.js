@@ -1,18 +1,18 @@
 /**
- *
- */
+*
+*/
 
 // ---------------------
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
 // ---------------------
 
 function max(x, y){
-    "use strict";
-    if(x > y) {
-      return x;
-    } else {
-      return y;
-    }
+  "use strict";
+  if(x > y) {
+    return x;
+  } else {
+    return y;
+  }
 }
 console.log( max(5, 6) );
 
@@ -21,23 +21,23 @@ console.log( max(5, 6) );
 // ---------------------
 
 function maxOfThree(a, b, c){
-    "use strict";
-    if(a > b && a > c) {
-      return a;
-    }
-    else if(b > a && b > c) {
-      return b;
-    }
-    else {
-      return c;
-    }
-  };
+  "use strict";
+  if(a > b && a > c) {
+    return a;
+  }
+  else if(b > a && b > c) {
+    return b;
+  }
+  else {
+    return c;
+  }
+};
 
 console.log(maxOfThree(7,9,11))
 
-    // if(max > c)
-    //   return max
-    //   else return c
+// if(max > c)
+//   return max
+//   else return c
 
 
 
@@ -47,13 +47,13 @@ console.log(maxOfThree(7,9,11))
 // ---------------------
 
 function isVowel(char){
-    "use strict";
-    var vowels = ['a', 'e', 'i', 'o', 'u'];
-    if(vowels.indexOf(char) > -1){
-      return true;
-    } else {
-      return false;
-    }
+  "use strict";
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+  if(vowels.indexOf(char) > -1){
+    return true;
+  } else {
+    return false;
+  }
 }
 console.log(isVowel("a"))
 
@@ -62,7 +62,7 @@ console.log(isVowel("a"))
 // ---------------------
 
 function rovarspraket(phrase){
-    "use strict";
+  "use strict";
 
 }
 
@@ -71,17 +71,22 @@ function rovarspraket(phrase){
 // ---------------------
 
 function sum(numbers){
-    "use strict";
+  "use strict";
 
- numbers.forEach
+  var numbers={2, 5, 6, 9}
 
+  numbers.forEach(sum(numbers)){
+    sum +=
+    numbers;
+  }
+  return sum;
 }
 
 
 
-function multiply(){
-    "use strict";
-    //...
+function multiply(numbers){
+  "use strict";
+  
 }
 
 // ---------------------
@@ -89,8 +94,8 @@ function multiply(){
 // ---------------------
 
 function reverse(){
-    "use strict";
-    //...
+  "use strict";
+  //...
 }
 
 // ---------------------
@@ -98,8 +103,8 @@ function reverse(){
 // ---------------------
 
 function findLongestWord(words){
-    "use strict";
-    //...
+  "use strict";
+  //...
 }
 
 // ---------------------
@@ -107,8 +112,8 @@ function findLongestWord(words){
 // ---------------------
 
 function filterLongWords(words, i){
-    "use strict";
-    //...
+  "use strict";
+  //...
 }
 
 // ---------------------
@@ -116,6 +121,5 @@ function filterLongWords(words, i){
 // ---------------------
 
 function charFreq(string){
-    "use strict";
-    //...
-}
+  "use strict";
+  //...
