@@ -8,13 +8,13 @@
 
 function max(x, y){
   "use strict";
-  if(x > y) {
+  if(x > y){
     return x;
-  } else {
-    return y;
-  }
+  } else{
+      return y;
+    }
 }
-console.log( max(5, 6) );
+console.log(max(5, 6));
 
 // ---------------------
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
@@ -22,25 +22,17 @@ console.log( max(5, 6) );
 
 function maxOfThree(a, b, c){
   "use strict";
-  if(a > b && a > c) {
+  if(a > b && a > c){
     return a;
-  }
-  else if(b > a && b > c) {
-    return b;
-  }
-  else {
-    return c;
-  }
-};
-
-console.log(maxOfThree(7,9,11))
-
-// if(max > c)
-//   return max
-//   else return c
-
-
-
+}
+  if(b > a && b > c){
+  return b;
+}
+  if(c > a && c > b){
+  return c;
+}
+}
+console.log(maxOfThree(5, 6, 11));
 
 // ---------------------
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
@@ -48,45 +40,56 @@ console.log(maxOfThree(7,9,11))
 
 function isVowel(char){
   "use strict";
-  var vowels = ['a', 'e', 'i', 'o', 'u'];
-  if(vowels.indexOf(char) > -1){
+  var vowel= ['a', 'e', 'i', 'o', 'u'];
+  if(vowel.indexOf(char) > -1){
     return true;
-  } else {
+  }
+  else{
     return false;
   }
 }
-console.log(isVowel("a"))
+console.log(isVowel('e'));
 
 // ---------------------
 // Write a function translate() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 // ---------------------
 
-function rovarspraket(phrase){
-  "use strict";
+function translate(phrase){
+  var word = phrase.split('');
+  var result = '';
 
+  word.forEach(function(letter){
+    if(isVowel(letter)) {
+      result += letter;
+    } else {
+      letter = letter + 'o' + letter;
+      result += letter;
+    }
+  });
+    return result;
 }
+
+console.log(translate('this is fun'));
 
 // ---------------------
 // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
 // ---------------------
 
-function sum(numbers){
+function sum(){
   "use strict";
 
-  var numbers={2, 5, 6, 9}
+  var number = [1, 2, 3, 4, 5];
 
-  numbers.forEach(sum(numbers)){
-    sum +=
-    numbers;
-  }
-  return sum;
+
+
+
 }
 
+console.log(sum(number));
 
-
-function multiply(numbers){
+function multiply(){
   "use strict";
-  
+  //...
 }
 
 // ---------------------
@@ -123,3 +126,4 @@ function filterLongWords(words, i){
 function charFreq(string){
   "use strict";
   //...
+}
